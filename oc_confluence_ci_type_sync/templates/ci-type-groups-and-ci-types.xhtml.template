@@ -1,0 +1,387 @@
+<ac:layout>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <p>
+    <ac:structured-macro ac:macro-id="56abbc9c-72ea-4d40-bca3-b1b6c5d7d84f" ac:name="toc" ac:schema-version="1">
+    </ac:structured-macro>
+   </p>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <ac:structured-macro ac:macro-id="cd794d5b-cced-46a4-9cef-86ab59c467f9" ac:name="info" ac:schema-version="1">
+    <ac:parameter ac:name="title">
+     WARNING
+    </ac:parameter>
+    <ac:rich-text-body>
+     <p>
+      In case of changes please do not foget to apply them to both schemas (
+      <strong>
+       dl_schema
+      </strong>
+      and
+      <strong>
+       cnt_schema
+      </strong>
+      ) simultaneously.
+     </p>
+    </ac:rich-text-body>
+   </ac:structured-macro>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <h1>
+    Groups and Types Naming rules.
+   </h1>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <h2>
+    General rules.
+   </h2>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <ol>
+    <li>
+     All groups and types codes may contain capital (uppercase) latin letters and digits only. Other characters prohibited.
+    </li>
+    <li>
+     Group and type codes must be unique. Group code have not to be the same as any type code and vice-versa.
+    </li>
+    <li>
+     Maximum code length is 30 characters
+    </li>
+    <li>
+     Maximum name length is 60 characters
+    </li>
+   </ol>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <h2>
+    Group code and name construction rules.
+   </h2>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <ol>
+    <li>
+     Alphanumeric code have to be the short abbreviation of a product group. Example:
+     <strong>
+      FBAG
+     </strong>
+     for
+     <em>
+      Foo Bar Application Group
+     </em>
+     ,
+     <strong>
+      BQAG
+     </strong>
+     for
+     <em>
+      Baz Qux Application Group
+     </em>
+     .
+    </li>
+    <li>
+     Name have to be human-readable and understandable, it have to represent product group.
+    </li>
+    <li>
+     Allowed characters in group name: latin letters, space bars, dashes.
+    </li>
+   </ol>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <h2>
+    Type code and name construction rules.
+   </h2>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <ol>
+    <li>
+     Alphanumeric code have to be the composition of:
+     <ol>
+      <li>
+       Short abbreviation of product group - at start
+      </li>
+      <li>
+       Short abbreviation of type essence:
+       <ol>
+        <li>
+         <strong>
+          DSTR
+         </strong>
+         for
+         <em>
+          Distributive
+         </em>
+        </li>
+        <li>
+         <strong>
+          DC
+         </strong>
+         for
+         <em>
+          Distribution Component
+         </em>
+        </li>
+        <li>
+         <strong>
+          REP
+         </strong>
+         for
+         <em>
+          Report
+         </em>
+        </li>
+        <li>
+         <strong>
+          DL
+         </strong>
+         for
+         <em>
+          Dialect
+         </em>
+        </li>
+        <li>
+         <strong>
+          TST
+         </strong>
+         for Test Set
+        </li>
+        <li>
+         <strong style="letter-spacing: 0.0px;">
+          FL
+         </strong>
+         for
+         <em style="letter-spacing: 0.0px;">
+          File
+         </em>
+         <em style="letter-spacing: 0.0px;">
+          <br/>
+         </em>
+        </li>
+        <li>
+         <strong>
+          CNF
+         </strong>
+         for
+         <em>
+          Configuration
+         </em>
+        </li>
+       </ol>
+      </li>
+      <li>
+       Other short intermediate suffixes. Currently suffix
+       <strong>
+        QA
+       </strong>
+       is used only for QualityAssistant-related types.
+      </li>
+      <li>
+       Customer specific suffix (if type is not standard one)
+       <strong>
+        CLIENT
+       </strong>
+       . This suffix
+       <u>
+        have to be at the end of a code always
+       </u>
+       .
+      </li>
+     </ol>
+    </li>
+    <li>
+     Type name should represent the type essence with software group reference. The only exclusion is: never include
+     <strong>
+      distributive
+     </strong>
+     or
+     <strong>
+      distribution
+     </strong>
+     part to the name. It is assumed by default.
+    </li>
+    <li>
+     Allowed characters for type name: latin letters, space bars, dashes, round brackets.
+    </li>
+    <li>
+     If a type is customer-specific then its name have to be ended with
+     <strong>
+      (customer-specific).
+     </strong>
+     <u>
+      Never place this suffix at the middle or the beginnig.
+     </u>
+    </li>
+   </ol>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <h1>
+    GAV rules.
+   </h1>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <p>
+    <strong>
+     GAV
+    </strong>
+    format:
+    <em>
+     groupId:artifactId:version:packaging:classifier
+    </em>
+   </p>
+   <p>
+    In components prepared by
+    <strong>
+     CDT:
+    </strong>
+   </p>
+   <ul>
+    <li>
+     <em>
+      classifier
+     </em>
+     component is optional and almost never used.
+    </li>
+    <li>
+     <em>
+      artifactId:version:packaging
+     </em>
+     is parsed from filename while deploying from
+     <strong>
+      Jenkins
+     </strong>
+     :
+     <br/>
+     <em>
+      (?P&lt;artifactId&gt;[^-]+)-(?P&lt;version&gt;.+)\.(?P&lt;packaging&gt;[^\.]+)
+     </em>
+    </li>
+    <li>
+     <p>
+      <em>
+       groupId
+      </em>
+      usually constructed while deploying from
+      <strong>
+       Jenkins
+      </strong>
+      by following template:
+      <br/>
+      <em>
+       {{ mvn_prefix }}.cdt.${PRODUCT}.${CLIENT}.${BRANCH}
+      </em>,
+      all substitute variables are computed while the build goes on.
+     </p>
+    </li>
+   </ul>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <h1>
+    DMS
+   </h1>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <p>
+    <ac:link>
+     <ri:page ri:content-title="CompsExtAutoGen" ri:space-key="RD">
+     </ri:page>
+    </ac:link>
+   </p>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <h1>
+    Current groups and types.
+   </h1>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <p>Table title shortcuts:</p>
+   <ul>
+    <li><strong>Std</strong>: Is Standard</li>
+    <li><strong>Dlv</strong>: Is Deliverable</li>
+   </ul>
+  </ac:layout-cell>
+ </ac:layout-section>
+ <ac:layout-section ac:type="single">
+  <ac:layout-cell>
+   <table class="wrapped relative-table" style="width: 100.0%;">
+    <colgroup>
+     <col style="width: 5%;"/>
+     <col style="width: 10%;"/>
+     <col style="width: 5%;"/>
+     <col style="width: 10%;"/>
+     <col style="width: 5%;"/>
+     <col style="width: 5%;"/>
+     <col style="width: 60%;"/>
+    </colgroup>
+    <tbody>
+     <tr>
+      <th>Group<br/>code</th>
+      <th>Group<br/>name</th>
+      <th>Type<br/>code</th>
+      <th>Type<br/>name</th>
+      <th>Std</th>
+      <th>Dlv</th>
+      <th>GAV regular expressions</th>
+     </tr>
+     {% for group in groups %}
+      <tr>
+       <td rowspan="{{ group.rowspan }}">{{ group.code }}</td>
+       <td rowspan="{{ group.rowspan }}">{{ group.name }}</td>
+       {% for type in group.types %}
+        {% if not loop.first %}
+         <tr>
+        {% endif %}
+        <td rowspan="{{ type.rowspan }}">{{ type.code }}</td>
+        <td rowspan="{{ type.rowspan }}">{{ type.name }}</td>
+        <td rowspan="{{ type.rowspan }}">{{ type.standard }}</td>
+        <td rowspan="{{ type.rowspan }}">{{ type.deliverable }}</td>
+        <td>
+         {% if type.regexp|length() > 0 %}
+          <ul>
+          {% for regexp in type.regexp %}
+           <li>{{ regexp }}</li>
+          {% endfor %}
+          </ul>
+         {% endif %}
+        </td>
+        </tr>
+     {% else %}
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+     {% endfor %}
+    {% endfor %}
+    </tbody>
+   </table>
+  </ac:layout-cell>
+ </ac:layout-section>
+</ac:layout>

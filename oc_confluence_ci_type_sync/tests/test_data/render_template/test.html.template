@@ -1,0 +1,39 @@
+<html>
+ <body>
+   <table border="1">
+    <tbody>
+     {% for group in groups %}
+      <tr>
+       <td rowspan="{{ group.rowspan }}">{{ group.code }}</td>
+       <td rowspan="{{ group.rowspan }}">{{ group.name }}</td>
+       {% for type in group.types %}
+        {% if not loop.first %}
+         <tr>
+        {% endif %}
+        <td rowspan="{{ type.rowspan }}">{{ type.code }}</td>
+        <td rowspan="{{ type.rowspan }}">{{ type.name }}</td>
+        <td rowspan="{{ type.rowspan }}">{{ type.standard }}</td>
+        <td rowspan="{{ type.rowspan }}">{{ type.deliverable }}</td>
+        <td>
+         {% if type.regexp|length() > 0 %}
+          <ul>
+          {% for regexp in type.regexp %}
+           <li>{{ regexp }}</li>
+          {% endfor %}
+          </ul>
+         {% endif %}
+        </td>
+        </tr>
+     {% else %}
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+     {% endfor %}
+    {% endfor %}
+    </tbody>
+   </table>
+ </body>
+</html>

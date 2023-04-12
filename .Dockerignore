@@ -1,0 +1,6 @@
+Dockerfile
+*/.git/*
+.gitignore
+*.py[oc]
+*/__pycache__/*
+*.swp

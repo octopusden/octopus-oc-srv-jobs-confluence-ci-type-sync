@@ -1,0 +1,48 @@
+{ "groups" : [ 
+    {
+        "code": "GROUP1", "name": "Group 1", "types": [
+            {
+                "code": "TYPE1", "name": "Type 1", "standard": "Yes", "deliverable": "Yes", "regexp": [
+                    "regexp_type_1_1"
+                ], "rowspan": 1
+            }
+        ], "rowspan": 1
+    },
+    {
+        "code": "GROUP2", "name": "Group 2", "types": [
+            {
+                "code": "TYPE2", "name": "Type 2", "standard": "Yes", "deliverable": "Yes", "regexp": [
+                    "regexp_type_2_1"
+                ], "rowspan": 1
+            },
+            {
+                "code": "TYPE3", "name": "Type 3", "standard": "Yes", "deliverable": "Yes", "regexp": [
+                    "regexp_type_3_1"
+                ], "rowspan": 1
+            },
+            {
+                "code": "TYPE4", "name": "Type 4", "standard": "Yes", "deliverable": "Yes",  "regexp": [
+                    "regexp_type_4_1"
+                ], "rowspan": 1
+            }
+        ], "rowspan": 3
+    },
+    {
+        "code": "", "name" : "", "types": [
+            {
+                "code": "TYPE5", "name": "Type 5", "standard": "Yes", "deliverable": "Yes", "regexp": [
+                    "regexp_type_5_1",
+                    "regexp_type_5_2",
+                    "regexp_type_5_3"
+                ], "rowspan": 1
+            },
+            {
+                "code": "TYPE6", "name": "Type 6", "standard": "Yes", "deliverable": "Jo", "regexp": [
+                    "regexp_type_6_1",
+                    "regexp_type_6_2"
+                ], "rowspan": 1
+            }
+        ], "rowspan": 2
+    }
+]
+}
