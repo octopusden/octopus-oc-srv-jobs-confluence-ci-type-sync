@@ -1,0 +1,10 @@
+name: On Release, deploying to Prod
+on:
+  release:
+    types: [published]
+jobs:
+  run-build-and-deploy:
+    uses: octopusden/octopus-base/.github/workflows/common-py-build-deploy.yml@main
+    with:
+      process_env: Prod
+    secrets: inherit

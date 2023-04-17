@@ -3,7 +3,7 @@ from setuptools import setup
 import glob
 import os
 
-VERSION="0.0.0.6"
+__version="1.0.0"
 
 def list_recursive(app, directory, extension="*"):
     dir_to_walk = os.path.join(app, directory)
@@ -16,11 +16,13 @@ def list_recursive(app, directory, extension="*"):
 
 
 _spec = {
-    'name': "oc_confluence_ci_type_sync",
-    'version': VERSION,
-    'description': 'Replace ci-types report at Confluence page',
-    'packages': ['oc_confluence_ci_type_sync'],
-    'install_requires': [
+    "name": "oc_confluence_ci_type_sync",
+    "version": __version,
+    "description": "Replace ci-types report at Confluence page",
+    "long_description": "",
+    "long_description_content_type": "text/plain",
+    "packages": ["oc_confluence_ci_type_sync"],
+    "install_requires": [
         "oc-orm-initializator",
         "oc-delivery-apps",
         "Jinja2",
