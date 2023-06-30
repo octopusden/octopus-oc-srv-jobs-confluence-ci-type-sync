@@ -1,4 +1,5 @@
-FROM python:3.7
+ARG PYTHON_VERSION=3.7
+FROM python:${PYTHON_VERSION}
 
 USER root
 RUN apt-get --quiet --assume-yes update && apt-get --quiet --assume-yes install sqlite3
