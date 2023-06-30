@@ -1,10 +1,22 @@
 name: On Release, deploying to Prod
+
 on:
   release:
     types: [published]
+
 jobs:
   run-build-and-deploy:
     uses: octopusden/octopus-base/.github/workflows/common-py-build-deploy.yml@main
     with:
       process_env: Prod
     secrets: inherit
+
+  build-push-docker-image:
+    uses: octopusden/octopus-base/.github/workflows/common-docker-build-deploy.yml@main
+    with:
+      build-args: |
+        PYTHON_VERSION=3.7
+      tags: |
+        ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+        ghcr.io/${{ github.repository }}:latest
+
